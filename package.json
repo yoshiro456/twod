@@ -12,7 +12,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun run ./src/build.ts"
+    "build": "tsup src/index.ts --format esm --dts --out-dir dist"
   },
   "devDependencies": {
     "@types/bun": "latest",
