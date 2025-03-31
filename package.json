@@ -12,7 +12,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm --dts --out-dir dist"
+    "build": "tsup src/index.ts --format esm --dts --out-dir dist",
+    "prepare": "bun run build"
   },
   "devDependencies": {
     "@types/bun": "latest",
