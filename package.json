@@ -3,6 +3,7 @@
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     "import": "./dist/index.js",
     "default": "./dist/index.js"
@@ -12,11 +13,12 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun build index.ts --outdir=dist --target=bun",
+    "build": "bun run ./src/build.ts",
     "prepublishOnly": "bun run build"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "tsup": "^8.4.0"
   },
   "peerDependencies": {
     "typescript": "^5"
