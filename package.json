@@ -2,10 +2,15 @@
   "name": "twod",
   "type": "module",
   "main": "./dist/index.js",
+  "module": "./dist/index.js",
   "exports": {
-    "import": "./dist/index.js"
+    "import": "./dist/index.js",
+    "default": "./dist/index.js"
   },
   "private": true,
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "bun build index.ts --outdir=dist --target=bun",
     "prepublishOnly": "bun run build"
