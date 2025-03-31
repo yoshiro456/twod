@@ -2,7 +2,7 @@
   "name": "twod",
   "type": "module",
   "main": "./dist/index.js",
-  "module": "./dist/index.js",
+  "module": "./src/index.ts",
   "types": "./dist/index.d.ts",
   "exports": {
     "import": "./dist/index.js",
@@ -13,8 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "bun run ./src/build.ts",
-    "prepublishOnly": "bun run build"
+    "build": "bun run ./src/build.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
